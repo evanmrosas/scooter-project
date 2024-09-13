@@ -11,7 +11,7 @@ class ScooterApp {
       OakCliff: [],
       UpTown: [],
     }
-    
+    this.registeredUsers = {}
   }
 }
 
