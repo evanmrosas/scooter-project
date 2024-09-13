@@ -1,0 +1,1 @@
+const newUser = new User(username, password, age)
