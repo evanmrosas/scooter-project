@@ -1,1 +1,2 @@
-const newUser = new User(username, password, age)
+lime.registerUser('evanrosas', '1234', 30)
+// lime.registerUser('aprilrosas', '1234', 29)

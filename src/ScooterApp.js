@@ -23,15 +23,24 @@ class ScooterApp {
     }
     else{
       let user = new User(username, password, age)
-      this.registeredUsers["User"] = user
-      console.log(this.registeredUsers)
+      this.registeredUsers[username] = user
+    }
+  }
+
+  loginUser(username, password){
+    for(const prop in this.registeredUsers){
+      if(prop == username){
+        username.login(password)
+      }
     }
   }
 }
 
 const lime = new ScooterApp()
 
-lime.registerUser('evanrosas', '1234', 24)
-lime.registerUser('evanrosas', '1234', 24)
-
+lime.registerUser('calebrosas', '1234', 24)
+lime.registerUser('evanrosas', '1234', 30)
+lime.registerUser('aprilrosas', '1234', 29)
+console.log(lime.registeredUsers)
+lime.loginUser('evanrosas', "1234")
 module.exports = ScooterApp
