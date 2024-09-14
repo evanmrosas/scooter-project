@@ -8,7 +8,7 @@ class User {
   }
   // logges the user in and checks if the password is correct
   login(password){
-    if(password == this.password){
+    if(password === this.password){
       this.loggedIn = true;
     } else{
       throw new Error('incorrect password');
